@@ -1,0 +1,89 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ececec">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/activity_details_title_image"
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/activity_details_title_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_details_title_image"
+            android:layout_margin="10dp"
+            android:text="Title"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/activity_details_actors"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/activity_details_title_name"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Actors :"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/activity_details_actors_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/activity_details_title_name"
+            android:layout_below="@id/activity_details_title_name"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/activity_details_actors"
+            android:layout_toRightOf="@+id/activity_details_actors"
+            android:gravity="left"
+            android:padding="5dp"
+            android:text="N/A"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/activity_details_plot"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/activity_details_plot_details"
+            android:layout_toLeftOf="@+id/activity_details_plot_details"
+            android:layout_toStartOf="@+id/activity_details_plot_details"
+            android:text="Plot :"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/activity_details_plot_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/activity_details_title_name"
+            android:layout_below="@id/activity_details_actors_name"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/activity_details_actors"
+            android:layout_toRightOf="@+id/activity_details_actors"
+            android:gravity="left"
+            android:padding="5dp"
+            android:text="N/A"
+            android:textColor="#000" />
+
+
+    </RelativeLayout>
+</ScrollView>
